@@ -1,7 +1,6 @@
-import java.util.{Date, Properties}
+import java.util.{Properties}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord, ProducerConfig}
 import scala.util.Random
-import kafka.producer.KeyedMessage
 
 object ScalaProducerExample extends App {
     def getRandomVal: String = {

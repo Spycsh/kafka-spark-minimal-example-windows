@@ -48,6 +48,14 @@
             <version>2.2.1</version>
         </dependency>
 
+        <!-- this dependency is needed for running KafkaSparkStructured.scala because Kafka is not the default source-->
+        <!-- https://spark.apache.org/docs/2.0.2/structured-streaming-kafka-integration.html -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql-kafka-0-10_2.11</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>

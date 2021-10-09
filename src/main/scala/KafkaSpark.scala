@@ -1,10 +1,7 @@
 
-
-import kafka.serializer.{DefaultDecoder, StringDecoder}
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming._
-//import org.apache.spark.streaming.kafka._
 import org.apache.spark.streaming.kafka010._
 object KafkaStreamAvg {
 
