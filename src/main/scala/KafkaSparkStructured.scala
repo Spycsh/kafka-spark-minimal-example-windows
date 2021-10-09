@@ -38,6 +38,8 @@ object KafkaSparkStructured{
       sum = sum + values.next()._2
       counter = counter + 1L
     }
+    sum = sum + state.getOption.getOrElse((0.0, 0L))._1
+    counter = counter + state.getOption.getOrElse((0.0, 0L))._2
     val average : Double = sum / counter
     state.update((sum, counter))
     (key, average)
